@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Login</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger text-light">
+    <img src="https://www.nihonbox.com/images/design/page/choix/gift.png" class="navbar-img" width="48" alt="navbar-img">
+    <a class="navbar-brand" href="#">TeEnviamosLoQueSea</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="form-inline my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <!--<button class="btn btn-outline-light my-2 my-sm-0 hidden-phone" type="submit">Buscar</button>-->
+    </form>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-home" aria-hidden="true"></i> Inicio
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-list-alt"></i> Elementos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="añadir-elemento.html"><i class="fas fa-plus-square"></i> Añadir</a>
+            <a class="dropdown-item" href="listado-elementos.html"><i class="fas fa-list-ul"></i> Listado</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="login.html">
+            <i class="fas fa-sign-in-alt"></i> Entrar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container h-100">
+    <div class="row h-100">
+      <span class="anchor" id="formComplex"></span>
+      <div class="col-md-6 offset-md-3 col-sm-12 h-100">
+        <span class="anchor" id="formLogin"></span>
+
+        <!-- form card login with validation feedback -->
+        <div class="card card-outline-secondary">
+          <div class="card-header">
+            <h3 class="mb-0 text-primary">Login</h3>
+          </div>
+          <div class="card-body">
+            <form class="form" role="form" autocomplete="off" id="loginForm" novalidate="" method="POST">
+              <div class="form-group">
+                <label for="uname1">Usuario</label>
+                <input type="text" class="form-control" name="uname1" id="uname1" required="">
+                <div class="invalid-feedback">Ingresa tu usuario</div>
+              </div>
+              <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" class="form-control" id="pwd1" required="" autocomplete="new-password">
+                <div class="invalid-feedback">Ingresa tu contraseña</div>
+              </div>
+              <div class="form-check small">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">
+                  <span>Recordarme</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Entrar</button>
+            </form>
+          </div>
+          <!--/card-body-->
+        </div>
+        <!-- /form card login -->
+        <h4 class="text-primary text-center mt-4">No tienes cuenta? Registrate!</h4>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <footer class="footer bg-dark">
+    <div class="container d-flex align-items-center justify-content-center h-100">
+      <span class="text-muted">Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

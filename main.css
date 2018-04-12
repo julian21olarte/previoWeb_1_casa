@@ -1,0 +1,18 @@
+.footer {
+  height: 60px;
+}
+.container {
+  box-sizing: border-box;
+  padding: 30px;
+}
+body {
+  height: 100vh;
+}
+
+.navbar-img {
+  margin-right: 15px;
+}
+
+.container .list-view {
+  margin-bottom: 80px;
+}

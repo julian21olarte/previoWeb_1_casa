@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Listado Elementos</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger text-light">
+        <img src="https://www.nihonbox.com/images/design/page/choix/gift.png" class="navbar-img" width="48" alt="navbar-img">
+        <a class="navbar-brand" href="#">TeEnviamosLoQueSea</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <form class="form-inline my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <!--<button class="btn btn-outline-light my-2 my-sm-0 hidden-phone" type="submit">Buscar</button>-->
+          </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-list-alt"></i> Elementos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="añadir-elemento.html"><i class="fas fa-plus-square"></i> Añadir</a>
+                <a class="dropdown-item active" href="listado-elementos.html"><i class="fas fa-list-ul"></i> Listado</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container h-100 list-view">
+          <div class="row h-100">
+              <span class="anchor" id="formComplex"></span>
+              <div class="card w-100">
+                <div class="card-body">
+                    <table class="table table-responsive">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Destino</th>
+                            <th scope="col">Precio</th>
+                            <th class="text-center" scope="col">Entrega</th>
+                            <th class="text-center" scope="col">Acciones</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Zapatos</td>
+                            <td>Bucaramanga</td>
+                            <td>$230.000</td>
+                            <td class="text-center">11/8/2018</td>
+                            <td class="text-center">
+                              <button class="btn btn-sm btn-warning text-light">Editar</button>
+                              <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>X-box 360</td>
+                            <td>Cucuta</td>
+                            <td>$990.000</td>
+                            <td class="text-center">10/4/2018</td>
+                            <td class="text-center">
+                              <button class="btn btn-sm btn-warning text-light">Editar</button>
+                              <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>SSD SATA 230GB</td>
+                            <td>Medellin</td>
+                            <td>$540.000</td>
+                            <td class="text-center">4/4/2018</td>
+                            <td class="text-center">
+                              <button class="btn btn-sm btn-warning text-light">Editar</button>
+                              <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Auriculares Xiaomi Piston 3</td>
+                            <td>Medellin</td>
+                            <td>$66.000</td>
+                            <td class="text-center">1/12/2018</td>
+                            <td class="text-center">
+                              <button class="btn btn-sm btn-warning text-light">Editar</button>
+                              <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Resmas de papel carta A4</td>
+                            <td>Medellin</td>
+                            <td>$540.000</td>
+                            <td class="text-center">12/12/2018</td>
+                            <td class="text-center">
+                              <button class="btn btn-sm btn-warning text-light">Editar</button>
+                              <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Reloj Rolex Oro</td>
+                            <td>Ocaña</td>
+                            <td>$2.100.000</td>
+                            <td class="text-center">2/7/2018</td>
+                            <td class="text-center">
+                              <button class="btn btn-sm btn-warning text-light">Editar</button>
+                              <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Control PS4 Original</td>
+                            <td>Ocaña</td>
+                            <td>$154.000</td>
+                            <td class="text-center">8/12/2018</td>
+                            <td class="text-center">
+                              <button class="btn btn-sm btn-warning text-light">Editar</button>
+                              <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Casco Voss Certificado</td>
+                            <td>Bogotá</td>
+                            <td>$224.000</td>
+                            <td class="text-center">5/1/2018</td>
+                            <td class="text-center">
+                              <button class="btn btn-sm btn-warning text-light">Editar</button>
+                              <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>  
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>     
+                </div>
+              </div>         
+          </div>
+      </div>
+  
+    <!--FOOTER-->
+    <footer class="footer bg-dark fixed-bottom">
+        <div class="container d-flex align-items-center justify-content-center h-100">
+          <span class="text-muted">Todos los derechos reservados.</span>
+        </div>
+      </footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
